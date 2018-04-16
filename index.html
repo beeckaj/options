@@ -7,6 +7,7 @@
   </head>
   <body>
     <body background="file:///Users/rebeckaeklof/Dokument/Blandat/options/rut.png">
+    <img src="file:///Users/rebeckaeklof/Dokument/Blandat/options/strand.jpg" alt="portugal">
     <img src="file:///Users/rebeckaeklof/Dokument/Blandat/options/hikiing.jpeg" alt="hikiing">
     <img src="file:///Users/rebeckaeklof/Dokument/Blandat/options/skiing.jpg" alt="skiing">
     <h1>Help me choose between...</h1>
@@ -16,6 +17,20 @@
       </div>
       <button class="addOption">Add</button>
     </div>
+    <div class="resultSection"></div>
     <button>GO!</button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+        }
+
+        $('.addOption').click(add_option)
+      })
+    </script>
   </body>
 </html>
